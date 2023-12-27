@@ -8,6 +8,14 @@ ContextMap E_Commerce_ContextMap {
 
 contains Ventas, Pagos, Inventario, Promociones, Usuarios
 
+Promociones -> Usuarios
+Usuarios [U]->[D,ACL] Pagos
+Promociones [U]->[D,ACL] Pagos
+Inventario [U]->[D,ACL] Pagos
+Ventas [U]->[D,ACL] Pagos
+Usuarios [U]->[D,ACL] Ventas
+Inventario [U]->[D,CF] Promociones
+Inventario -> Ventas
 
 
 }
