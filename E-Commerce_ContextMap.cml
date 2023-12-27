@@ -1,0 +1,5 @@
+BoundedContext Ventas
+BoundedContext Pagos
+BoundedContext Inventario
+BoundedContext Promociones
+BoundedContext Usuarios
