@@ -15,7 +15,6 @@ Inventario [U]->[D,ACL] Pagos
 Ventas [U]->[D,ACL] Pagos
 Usuarios [U]->[D,ACL] Ventas
 Inventario [U]->[D,CF] Promociones
-Inventario -> Ventas
-
+Inventario -> Ventas 
 
 }
