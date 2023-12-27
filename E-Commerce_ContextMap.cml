@@ -3,3 +3,11 @@ BoundedContext Pagos
 BoundedContext Inventario
 BoundedContext Promociones
 BoundedContext Usuarios
+
+ContextMap E_Commerce_ContextMap {
+
+contains Ventas, Pagos, Inventario, Promociones, Usuarios
+
+
+
+}
