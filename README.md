@@ -26,3 +26,15 @@ Los contextos promociones y usuario usan el patrón de diseño cliente-proveedor
 ### Usuario y pagos
 Patrón capa anticorrupción
 El contexto de usuario y el de pagos trabajan juntos para garantizar transacciones seguras y eficientes en un sistema de comercio electrónico. El contexto de usuario proporciona la información de pago, mientras que el contexto de pagos procesa la información y completa la transacción. La capa anticorrupción protege la información de pago de la corrupción.
+### Pago y ventas
+Patrón capa anticorrupción
+El contexto de ventas proporciona la información necesaria para completar la transacción, como los productos seleccionados, los precios, etc. El contexto de pagos recibe la información de la transacción del contexto de ventas y la procesa para completar la transacción. La capa anticorrupción protege la información de la transacción proporcionada por el contexto de ventas de la corrupción. La capa anticorrupción válida, encripta y procesa la información de la transacción de manera segura.
+### Promociones y Pagos
+Patrón capa anticorrupción
+El contexto de ventas proporciona la información necesaria para completar la transacción, como los productos seleccionados, los precios, etc. El contexto de pagos recibe la información de la transacción del contexto de ventas y la procesa para completar la transacción. La capa anticorrupción protege la información de la transacción proporcionada por el contexto de ventas de la corrupción. La capa anticorrupción válida, encripta y procesa la información de la transacción de manera segura.
+### Ventas e Inventarios
+Patrón cliente-proveedor:
+Los contextos de promociones y pagos en comercio electrónico siguen el patrón cliente-proveedor. El contexto de promociones, actuando como cliente, requiere datos del usuario para aplicar ofertas en pagos. Aquí, el contexto usuario domina, proporcionando la información clave. Esta dinámica asegura la aplicación precisa de promociones durante pagos, mejorando la experiencia del cliente y garantizando transacciones precisas en el sistema.
+### Usuario y Ventas
+Patrón capa anticorrupción
+El contexto de usuario proporciona información sobre el usuario, como sus preferencias, historial e información de perfil. Esta información se utiliza para personalizar la experiencia de compra, mostrando productos relevantes, haciendo recomendaciones y ofreciendo ofertas personalizadas. La capa anticorrupción protege la información del usuario de la corrupción, asegurando su integridad y seguridad.
