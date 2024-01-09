@@ -1,46 +1,46 @@
 digraph "ContextMapGraph" {
 graph ["imagepath"="/tmp/GraphvizJava"]
-"Inventario" ["margin"="0.3","orientation"="144","shape"="egg","fontsize"="16","style"="bold","label"="Inventario\n","fontname"="sans-serif"]
-"Pagos" ["margin"="0.3","orientation"="307","shape"="egg","fontsize"="16","style"="bold","label"="Pagos\n","fontname"="sans-serif"]
-"Ventas" ["margin"="0.3","orientation"="231","shape"="egg","fontsize"="16","style"="bold","label"="Ventas\n","fontname"="sans-serif"]
-"Promociones" ["margin"="0.3","orientation"="289","shape"="egg","fontsize"="16","style"="bold","label"="Promociones\n","fontname"="sans-serif"]
-"Usuarios" ["margin"="0.3","orientation"="246","shape"="egg","fontsize"="16","style"="bold","label"="Usuarios\n","fontname"="sans-serif"]
-"Inventario" -> "Pagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
-<tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
-</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
-<tr><td bgcolor="white">U</td></tr>
-</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Inventario" -> "Ventas" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+"GestionInventario" ["margin"="0.3","orientation"="73","shape"="egg","fontsize"="16","style"="bold","label"="GestionInventario\n","fontname"="sans-serif"]
+"GestionVentas" ["margin"="0.3","orientation"="20","shape"="egg","fontsize"="16","style"="bold","label"="GestionVentas\n","fontname"="sans-serif"]
+"GestionPagos" ["margin"="0.3","orientation"="14","shape"="egg","fontsize"="16","style"="bold","label"="GestionPagos\n","fontname"="sans-serif"]
+"GestionPromociones" ["margin"="0.3","orientation"="306","shape"="egg","fontsize"="16","style"="bold","label"="GestionPromociones\n","fontname"="sans-serif"]
+"GestionUsuarios" ["margin"="0.3","orientation"="253","shape"="egg","fontsize"="16","style"="bold","label"="GestionUsuarios\n","fontname"="sans-serif"]
+"GestionInventario" -> "GestionVentas" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Inventario" -> "Promociones" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+"GestionInventario" -> "GestionPagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"GestionInventario" -> "GestionPromociones" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
 <tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>CF</font></td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Ventas" -> "Pagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+"GestionVentas" -> "GestionPagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
 <tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Promociones" -> "Pagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+"GestionPromociones" -> "GestionPagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
 <tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Promociones" -> "Usuarios" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+"GestionPromociones" -> "GestionUsuarios" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Usuarios" -> "Ventas" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+"GestionUsuarios" -> "GestionVentas" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
 <tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Usuarios" -> "Pagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+"GestionUsuarios" -> "GestionPagos" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
 <tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>

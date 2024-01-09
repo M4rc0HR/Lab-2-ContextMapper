@@ -1,20 +1,20 @@
-BoundedContext Ventas
-BoundedContext Pagos
-BoundedContext Inventario
-BoundedContext Promociones
-BoundedContext Usuarios
+BoundedContext GestionVentas
+BoundedContext GestionPagos
+BoundedContext GestionInventario
+BoundedContext GestionPromociones
+BoundedContext GestionUsuarios
 
 ContextMap E_Commerce_ContextMap {
 
-contains Ventas, Pagos, Inventario, Promociones, Usuarios
+contains GestionVentas, GestionPagos, GestionInventario, GestionPromociones, GestionUsuarios
 
-Promociones -> Usuarios
-Usuarios [U]->[D,ACL] Pagos
-Promociones [U]->[D,ACL] Pagos
-Inventario [U]->[D,ACL] Pagos
-Ventas [U]->[D,ACL] Pagos
-Usuarios [U]->[D,ACL] Ventas
-Inventario [U]->[D,CF] Promociones
-Inventario -> Ventas 
+GestionPromociones -> GestionUsuarios
+GestionUsuarios [U]->[D,ACL] GestionPagos
+GestionPromociones [U]->[D,ACL] GestionPagos
+GestionInventario [U]->[D,ACL] GestionPagos
+GestionVentas [U]->[D,ACL] GestionPagos
+GestionUsuarios [U]->[D,ACL] GestionVentas
+GestionInventario [U]->[D,CF] GestionPromociones
+GestionInventario -> GestionVentas 
 
 }
