@@ -8,6 +8,14 @@ ContextMap E_Commerce_ContextMap {
 
 contains GestionOrdenes, GestionPagos, GestionInventario, GestionPromociones, GestionUsuarios
 
+//ContractsContext [P]<->[P] ClaimsContext -> Asociación
+// CargoBookingContext [SK]<->[SK] VoyagePlanningContext -> Shared Kernel
+// CustomerSelfServiceContext [D,C]<-[U,S] CustomerManagementContext -> Customer Supplier
+// GestionInventario [U]->[D,CF] GestionPromociones -> Conformist
+// PrintingContext [U,OHS]->[D,ACL] PolicyManagementContext -> Open Host Service
+// GestionPromociones [U]->[D,ACL] GestionPagos -> Anticorruption Layer
+// PolicyManagementContext [D,CF]<-[U,OHS,PL] CustomerManagementContext -> Published Language
+
 GestionUsuarios -> GestionPromociones
 GestionUsuarios [U]->[D,ACL] GestionPagos
 GestionPromociones [U]->[D,ACL] GestionPagos
